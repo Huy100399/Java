@@ -1,0 +1,49 @@
+package File;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+
+import com.sun.org.apache.bcel.internal.classfile.Field;
+
+// de bai  : nhap vao duong dan thu muc va hien thi cac yeu cau , xem tat ca cac file trong thu muc do , cac thu muc con , ..
+public class Bt1 {
+	
+	public static void creatnewfile()
+	{
+		String path;
+		System.out.println("nhap duong dan file muon tao !");
+		path= new Scanner(System.in).nextLine();
+		File file= new File(path);
+		if(file.exists()!=true)
+		{
+
+			try {
+				file.createNewFile();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				System.out.println("tao file k thanh vong !");
+				System.out.println("loi : "+e.getMessage());
+			}
+		}
+		else 
+			System.out.println("file da ton tai !");
+		
+		if(file.exists()) System.out.println("duong dan file :"+file.getPath());
+	}
+	
+
+	public static void GOTO()
+	{
+		String path;
+		System.out.println("hay nhap duong dan ma ban muon toi !");
+		path= new Scanner(System.in).nextLine();
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        creatnewfile();
+		
+	}
+
+}

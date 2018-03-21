@@ -1,0 +1,47 @@
+package object.oriented;
+
+
+// supper dung de phan biet member trung ten cua class cha va class ke thua 
+// va dung de goi ham tao cua class cha tu class ke thua
+
+class supperclasss
+{
+	
+	int a = 20 ;
+	
+	void print()
+	{
+		System.out.println("this is print method of supperclass !");
+	}
+}
+
+
+public class Supper_KeyWord extends supperclasss{
+	
+	
+	
+
+	int a=10;
+
+	void print()
+	{
+		System.out.println("this is print method of supper_keyword class !");
+		
+	}
+	
+	void print1()
+	{
+		System.out.println("'a' of supperclasss : "+super.a);
+		System.out.println("'a' od supper_keyword class "+a);
+	}
+	
+	
+
+	public static void main(String[] args) {
+		
+		Supper_KeyWord  obj1= new Supper_KeyWord();
+		obj1.print();
+		obj1.print1();
+	}
+
+}
