@@ -1,0 +1,52 @@
+package object.oriented;
+
+class superclass
+{
+	int  a ;
+	int b;
+	int c;
+	
+	
+	public superclass(int a, int b, int c) {
+		super();
+		this.a = a;
+		this.b = b;
+		this.c = c;
+	}
+
+	void tong()
+	{
+		System.out.println("tong = "+(a+b));
+	}
+	
+	void hieu()
+	{
+		System.out.println("hieu = "+(a-b));
+	}
+	
+}
+
+public class Iheritance  extends superclass
+{
+	
+	public Iheritance(int a, int b, int c) {
+		super(a, b, c);
+		// TODO Auto-generated constructor stub
+	}
+
+	void tich()
+	{
+		System.out.println("tich = "+a*b);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Iheritance obj1= new Iheritance(1, 1, 1);
+		
+		obj1.tong();
+		obj1.hieu();
+		obj1.tich();
+	}
+
+}
