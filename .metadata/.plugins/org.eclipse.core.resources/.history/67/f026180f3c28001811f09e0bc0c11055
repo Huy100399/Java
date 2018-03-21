@@ -1,0 +1,32 @@
+package multi.threading;
+
+
+// Thread creation by extending the Thread class
+//https://www.geeksforgeeks.org/multithreading-in-java/
+
+class thread1 extends Thread
+{
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		super.run();
+		System.out.println("thread 1 !");
+		
+	}
+}
+
+
+
+
+public class MultiThreadingBasic {
+	 public static void main(String[] args) {
+		 thread1 th1= new thread1();
+		for(int i=1 ; i<=10 ;i++)
+		{
+			thread1 th = new thread1();
+			th.start();
+			System.out.println(th.getId());
+		}
+	}
+	
+}

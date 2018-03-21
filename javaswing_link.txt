@@ -1,0 +1,17 @@
+@ how to make Frames (Main Windows) : 
+
+https://docs.oracle.com/javase/tutorial/uiswing/components/frame.html
+
+#include : 
+
++) How to Make Frames (Main Windows)
+
++) Creating and Showing Frames
+
++) Specifying Window Decorations
+
++) Specifying Window Decorations
+
++) The Frame API
+
++) Examples that Use Frames

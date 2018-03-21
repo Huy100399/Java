@@ -1,0 +1,29 @@
+package object.oriented;
+
+
+class supperclass
+{
+	int a = 20 ;
+	
+	void print()
+	{
+		System.out.println("this is print method of supperclass !");
+	}
+}
+
+
+public class Supper_KeyWord extends superclass{
+	
+	int a= 10;
+	
+	void print()
+	{
+		System.out.println("this is print method of supper_keyword class !");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

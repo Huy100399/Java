@@ -1,0 +1,49 @@
+package multi.threading;
+
+
+class thread1 extends Thread
+{
+	public thread1() {
+		// TODO Auto-generated constructor stub
+		System.out.println("creat new thread !");
+	}
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		for(int i =1;i<=5;i++)
+		{
+			System.out.println("thread is running !"+i);
+			try {
+				this.sleep(1000);
+				System.out.println("thread non-runable (blocked)");
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		System.out.println("thread exiting");
+	}
+	
+	
+	@Override
+	public synchronized void start() {
+		// TODO Auto-generated method stub
+		System.out.println("start thread !");
+		super.start();
+		
+	}
+	
+
+}
+
+public class CreatThread {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		thread1 th1= new thread1();
+		
+		th1.start();
+	}
+
+}

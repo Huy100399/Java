@@ -1,0 +1,18 @@
+package collections.in.java;
+
+import java.util.List;
+
+//https://www.javatpoint.com/java-list
+
+
+public class JavaList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+ 			
+	}
+
+}
