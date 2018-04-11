@@ -1,7 +1,0 @@
-* instance của một class dc hiểu là một biến đối tượng của class đó , hay nếu xét trong phương diện các member của class thì các member của class mà 
-được định nghĩa là non-static thì cx doc coi là các thành phàn instance 
-*  typecasting : ep kieu 
-
-* Downcasting  : tham chieu tu bien doi tg cua class con toi class cha (ep kieu xuong )
-
-
